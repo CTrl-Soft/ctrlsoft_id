@@ -1,0 +1,79 @@
+2019-07-16 06:05:52 Connection: opening to sg3plcpnl0077.prod.sin3.secureserver.net:25, timeout=300, options=array()
+2019-07-16 06:05:52 Connection: opened
+2019-07-16 06:05:57 SMTP INBOUND: "220-sg3plcpnl0077.prod.sin3.secureserver.net ESMTP Exim 4.92 #2 Mon, 15 Jul 2019 23:05:57 -0700"
+2019-07-16 06:05:57 SMTP INBOUND: "220-We do not authorize the use of this system to transport unsolicited,"
+2019-07-16 06:05:57 SMTP INBOUND: "220 and/or bulk e-mail."
+2019-07-16 06:05:57 SERVER -> CLIENT: 220-sg3plcpnl0077.prod.sin3.secureserver.net ESMTP Exim 4.92 #2 Mon, 15 Jul 2019 23:05:57 -0700 220-We do not authorize the use of this system to transport unsolicited, 220 and/or bulk e-mail.
+2019-07-16 06:05:57 CLIENT -> SERVER: EHLO otes.in
+2019-07-16 06:05:57 SMTP INBOUND: "250-sg3plcpnl0077.prod.sin3.secureserver.net Hello sg3plcpnl0077.prod.sin3.secureserver.net [148.66.146.32]"
+2019-07-16 06:05:57 SMTP INBOUND: "250-SIZE 52428800"
+2019-07-16 06:05:57 SMTP INBOUND: "250-8BITMIME"
+2019-07-16 06:05:57 SMTP INBOUND: "250-PIPELINING"
+2019-07-16 06:05:57 SMTP INBOUND: "250-AUTH PLAIN LOGIN"
+2019-07-16 06:05:57 SMTP INBOUND: "250-CHUNKING"
+2019-07-16 06:05:57 SMTP INBOUND: "250-STARTTLS"
+2019-07-16 06:05:57 SMTP INBOUND: "250-SMTPUTF8"
+2019-07-16 06:05:57 SMTP INBOUND: "250 HELP"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250-sg3plcpnl0077.prod.sin3.secureserver.net Hello sg3plcpnl0077.prod.sin3.secureserver.net [148.66.146.32]250-SIZE 52428800250-8BITMIME250-PIPELINING250-AUTH PLAIN LOGIN250-CHUNKING250-STARTTLS250-SMTPUTF8250 HELP
+2019-07-16 06:05:57 CLIENT -> SERVER: STARTTLS
+2019-07-16 06:05:57 SMTP INBOUND: "220 TLS go ahead"
+2019-07-16 06:05:57 SERVER -> CLIENT: 220 TLS go ahead
+2019-07-16 06:05:57 CLIENT -> SERVER: EHLO otes.in
+2019-07-16 06:05:57 SMTP INBOUND: "250-sg3plcpnl0077.prod.sin3.secureserver.net Hello sg3plcpnl0077.prod.sin3.secureserver.net [148.66.146.32]"
+2019-07-16 06:05:57 SMTP INBOUND: "250-SIZE 52428800"
+2019-07-16 06:05:57 SMTP INBOUND: "250-8BITMIME"
+2019-07-16 06:05:57 SMTP INBOUND: "250-PIPELINING"
+2019-07-16 06:05:57 SMTP INBOUND: "250-AUTH PLAIN LOGIN"
+2019-07-16 06:05:57 SMTP INBOUND: "250-CHUNKING"
+2019-07-16 06:05:57 SMTP INBOUND: "250-SMTPUTF8"
+2019-07-16 06:05:57 SMTP INBOUND: "250 HELP"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250-sg3plcpnl0077.prod.sin3.secureserver.net Hello sg3plcpnl0077.prod.sin3.secureserver.net [148.66.146.32]250-SIZE 52428800250-8BITMIME250-PIPELINING250-AUTH PLAIN LOGIN250-CHUNKING250-SMTPUTF8250 HELP
+2019-07-16 06:05:57 CLIENT -> SERVER: MAIL FROM:<chandrakant.angadi@otes.in>
+2019-07-16 06:05:57 SMTP INBOUND: "250 OK"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250 OK
+2019-07-16 06:05:57 CLIENT -> SERVER: RCPT TO:<bchipre@gmail.com>
+2019-07-16 06:05:57 SMTP INBOUND: "250 Accepted"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250 Accepted
+2019-07-16 06:05:57 CLIENT -> SERVER: RCPT TO:<snehalshahapurkar88@gmail.com>
+2019-07-16 06:05:57 SMTP INBOUND: "250 Accepted"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250 Accepted
+2019-07-16 06:05:57 CLIENT -> SERVER: RCPT TO:<chandrakant.angadi@gmail.com>
+2019-07-16 06:05:57 SMTP INBOUND: "250 Accepted"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250 Accepted
+2019-07-16 06:05:57 CLIENT -> SERVER: DATA
+2019-07-16 06:05:57 SMTP INBOUND: "354 Enter message, ending with "." on a line by itself"
+2019-07-16 06:05:57 SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+2019-07-16 06:05:57 CLIENT -> SERVER: Date: Tue, 16 Jul 2019 06:05:52 +0000
+2019-07-16 06:05:57 CLIENT -> SERVER: To: Brahmanand Chipre <bchipre@gmail.com>, snehalshahapurkar88@gmail.com
+2019-07-16 06:05:57 CLIENT -> SERVER: From: Chandrakant Angadi <chandrakant.angadi@otes.in>
+2019-07-16 06:05:57 CLIENT -> SERVER: Reply-To: Information <bchipre@gmail.com>
+2019-07-16 06:05:57 CLIENT -> SERVER: Subject: 1st ESM Email Verification
+2019-07-16 06:05:57 CLIENT -> SERVER: Message-ID: <1EJQepvk7W7qlGLBGfNvYycy4rFLrW6Zrf592JPk@otes.in>
+2019-07-16 06:05:57 CLIENT -> SERVER: X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+2019-07-16 06:05:57 CLIENT -> SERVER: MIME-Version: 1.0
+2019-07-16 06:05:57 CLIENT -> SERVER: Content-Type: multipart/alternative;
+2019-07-16 06:05:57 CLIENT -> SERVER: boundary="b1_1EJQepvk7W7qlGLBGfNvYycy4rFLrW6Zrf592JPk"
+2019-07-16 06:05:57 CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: This is a multi-part message in MIME format.
+2019-07-16 06:05:57 CLIENT -> SERVER: --b1_1EJQepvk7W7qlGLBGfNvYycy4rFLrW6Zrf592JPk
+2019-07-16 06:05:57 CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: This is the body in plain text for non-HTML mail clients
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: --b1_1EJQepvk7W7qlGLBGfNvYycy4rFLrW6Zrf592JPk
+2019-07-16 06:05:57 CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: This is a test <b>email!</b>
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: --b1_1EJQepvk7W7qlGLBGfNvYycy4rFLrW6Zrf592JPk--
+2019-07-16 06:05:57 CLIENT -> SERVER: 
+2019-07-16 06:05:57 CLIENT -> SERVER: .
+2019-07-16 06:05:57 SMTP INBOUND: "250 OK id=1hnGb7-00FicT-8i"
+2019-07-16 06:05:57 SERVER -> CLIENT: 250 OK id=1hnGb7-00FicT-8i
+2019-07-16 06:05:57 CLIENT -> SERVER: QUIT
+2019-07-16 06:05:57 SMTP INBOUND: "221 sg3plcpnl0077.prod.sin3.secureserver.net closing connection"
+2019-07-16 06:05:57 SERVER -> CLIENT: 221 sg3plcpnl0077.prod.sin3.secureserver.net closing connection
+2019-07-16 06:05:57 Connection: closed
+Message has been sent

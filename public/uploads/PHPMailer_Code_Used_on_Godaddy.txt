@@ -1,0 +1,76 @@
+
+<?php
+
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\Exception;
+
+// Load Composer's autoloader
+//require 'vendor/autoload.php';
+
+//Function used in autoload.php:
+function PHPMailerAutoload($classname)
+{
+$filename = dirname(__FILE__).DIRECTORY_SEPARATOR.'class.'.strtolower($classname).'.php';
+if (is_readable($filename)) {
+    require $filename;
+  }
+}
+
+if (version_compare(PHP_VERSION, '5.1.2', '>=')) {
+if (version_compare(PHP_VERSION, '5.3.0', '>=')) {
+    spl_autoload_register('PHPMailerAutoload', true, true);
+} else {
+    spl_autoload_register('PHPMailerAutoload');
+}
+} else {
+function __autoload($classname)
+{
+    PHPMailerAutoload($classname);
+ }
+}
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'src/Exception.php';
+require 'src/PHPMailer.php';
+require 'src/SMTP.php';
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->SMTPDebug  = 4;                                       // Enable verbose debug output
+    $mail->Host       = 'sg3plcpnl0077.prod.sin3.secureserver.net';
+    $mail->Port       = 25;                   
+    $mail->SMTPSecure = 'none';                 
+    $mail->SMTPAuth   = FALSE;
+    $mail->Username   = '';
+    $mail->Password   = '';
+
+    //Recipients
+    $mail->setFrom('chandrakant.angadi@otes.in', 'Chandrakant Angadi');
+    $mail->addAddress('bchipre@gmail.com', 'Brahmanand Chipre');     // Add a recipient
+    $mail->addAddress('snehalshahapurkar88@gmail.com');               // Name is optional
+    $mail->addReplyTo('bchipre@gmail.com', 'Information');
+    $mail->addCC('bchipre@gmail.com');
+    $mail->addBCC('chandrakant.angadi@gmail.com');
+
+    // Attachments
+   // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = '1st ESM Email Verification';
+    $mail->Body    = 'This is a test <b>email!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
