@@ -364,7 +364,7 @@
                                     <img src="<?= base_url('/uploads/portfolio/2.png') ?>" alt="">
                                     <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                         <div class="portfolio-content">
-                                            <div class="portfolio-icon">
+                                            <div class="portfolio-icon">m
                                                 <a class="image-popup" href="<?= base_url('/uploads/portfolio/2.png') ?>"><i class="lni lni-zoom-in"></i></a>
                                                 <img src="<?= base_url('/uploads/portfolio/shape.svg') ?>" alt="shape" class="shape">
                                             </div>
@@ -614,6 +614,34 @@
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
+
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-style mt-30">
+                        <div class="pricing-header text-center">
+                            <h5 class="sub-title">Customize License</h5>
+                            <p class="month"><span class="price">Call</span></p>
+                            <p class="month">per Project</p>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li><i class="lni lni-check-mark-circle"></i> Silahkan langsung hubungi kami</li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                                <li><i class="lni lni-check-mark-circle"></i> </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn rounded-buttons text-center">
+                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
+                        </div>
+                    </div> <!-- pricing style one -->
+                </div>
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -714,7 +742,9 @@
                             <li></li>
                             <li></li>
                         </ul>
+                        <!--
                         <p class="text">Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum. <br> <br> ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.</p>
+                        -->
                     </div> <!-- testimonial left content -->
                 </div>
                 <div class="col-lg-6">
@@ -733,8 +763,8 @@
                                             <img src="<?= base_url('/uploads/author-2.jpg') ?>" alt="author">
                                         </div>
                                         <div class="author-name media-body">
-                                            <h5 class="name">Mr. Budi</h5>
-                                            <span class="sub-title">Pemilik Riverside</span>
+                                            <h5 class="name">Budi</h5>
+                                            <span class="sub-title">Pemilik Kios Riverside</span>
                                         </div>
                                     </div>
                                     <div class="author-review">
@@ -751,12 +781,12 @@
                             </div> <!-- single testimonial -->
                             <div class="single-testimonial">
                                 <div class="testimonial-text">
-                                    <p class="text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl, sit amet convallis nunc turp.”</p>
+                                    <p class="text">“Program simple dan Completed.”</p>
                                 </div>
                                 <div class="testimonial-author d-sm-flex justify-content-between">
                                     <div class="author-info d-flex align-items-center">
                                         <div class="author-image">
-                                            <img src="<?= base_url('/uploads/author-4.jpg') ?>" alt="author">
+                                            <img src="<?= base_url('/uploads/author-1.jpg') ?>" alt="author">
                                         </div>
                                         <div class="author-name media-body">
                                             <h5 class="name">Mr. Jems Bond</h5>
@@ -1105,8 +1135,8 @@
                         <p class="text">Software Retail dan Accounting <strong>(CTrlSoft)</strong> dikembangkan untuk memenuhi permasalahan yang banyak didapatkan oleh Toko atau unit usaha dagang anda. Komitmen kami adalah kepuasan anda.</p>
                     </div>
                     <ul class="social mt-30">
-                        <li><a href="https://facebook.com/yantohariyono"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li><a href="https://www.instagram.com/yanto_hariyono"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://www.facebook.com/ctrlsoft.id"><i class="lni lni-facebook-filled"></i></a></li>
+                        <!--<li><a href="https://www.instagram.com/yanto_hariyono"><i class="lni lni-instagram-original"></i></a></li>-->
                         <li><a href="https://www.linkedin.com/in/yanto-hariyono-64b3a6a3"><i class="lni lni-linkedin-original"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCLyXkXP7lMHePI3Uf_wp_ZQ"><i class="lni lni-youtube"></i></a></li>
                     </ul> <!-- social -->
