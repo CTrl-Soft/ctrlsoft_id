@@ -40,6 +40,8 @@
     <!--====== Default CSS ======-->
     <link rel="stylesheet" href="<?= base_url('/css/default.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/css/style.css') ?>">
+    <script src="<?= base_url('js/jquery-3.6.0.slim.min.js') ?>"></script>
+    <script src="<?= base_url('bootstrap_4_5/js/bootstrap.bundle.min.js') ?>"></script>
 
     <style>
         .bd-placeholder-img {
@@ -57,8 +59,18 @@
             }
         }
     </style>
+
     <!-- Custom styles for this template -->
     <link href="<?= base_url('bootstrap_4_5/examples/sticky-footer-navbar/sticky-footer-navbar.css') ?>" rel="stylesheet">
+
+    <script type="text/javascript">
+        function whatsappClick() {
+            var url = "http://api.whatsapp.com/send/?phone=6285159606023&text=Bolehkah+Saya+bertanya+mengenai+produk+dari+CTrlSoft?+Terima+kasih+...";
+            //alert(url);
+            var win = window.open(url, "_blank");
+            win.focus();
+        };
+    </script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -113,8 +125,6 @@
             <span class="text-muted">&copy; <?= date('Y') ?> CtrlSoft.id | Designed by CTrlSoftcomp</span>
         </div>
     </footer>
-    <script src="<?= base_url('js/jquery-3.6.0.slim.min.js') ?>" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="<?= base_url('bootstrap_4_5/js/bootstrap.bundle.min.js') ?>" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -60,7 +60,7 @@
     <!--====== Main js ======-->
     <script src="<?= base_url('/js/main.js') ?>"></script>
 
-    <script>
+    <script type="text/javascript">
         //===== Sticky
         $(window).on('scroll', function(event) {
             var scroll = $(window).scrollTop();
@@ -72,6 +72,36 @@
                 $(".navbar-area img").attr("src", "<?= base_url('/uploads/logo-2.svg') ?>");
             }
         });
+
+        function whatsappClick() {
+            var url = "http://api.whatsapp.com/send/?phone=6285159606023&text=Bolehkah+Saya+bertanya+mengenai+produk+dari+CTrlSoft?+Terima+kasih+...";
+            //alert(url);
+            var win = window.open(url, "_blank");
+            win.focus();
+        };
+
+        function whatsappModuleClick(modul) {
+            var strModul = "";
+            switch (modul) {
+                case 1:
+                    strModul = "Basic";
+                    break;
+                case 2:
+                    strModul = "Pro";
+                    break;
+                case 3:
+                    strModul = "Custom";
+                    break;
+                default:
+                    strModul = "Enterprise";
+                    break;
+            }
+            //alert(strModul)
+            var url = "http://api.whatsapp.com/send/?phone=6285159606023&text=Hi+*CTrlSoft*,+Apa+yang+saya+dapatkan+dari+_Modul+" + strModul + "_+ini?+Terima+kasih+...";
+            //alert(url);
+            var win = window.open(url, "_blank");
+            win.focus();
+        };
     </script>
 </head>
 
@@ -554,7 +584,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
+                            <a class="main-btn rounded-one" href="javascript:whatsappModuleClick(1)">GET STARTED</a>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -582,7 +612,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
+                            <a class="main-btn rounded-one" href="javascript:whatsappModuleClick(2)">GET STARTED</a>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -610,7 +640,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
+                            <a class="main-btn rounded-one" href="javascript:whatsappModuleClick(0)">GET STARTED</a>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -638,7 +668,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
+                            <a class="main-btn rounded-one" href="javascript:whatsappModuleClick(3)">GET STARTED</a>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -969,7 +999,7 @@
                             </div>
                             <div class="contact-info-content media-body">
                                 <p class="text">Marketing 1 :
-                                    <a href="tel:+6281217472711" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0812 1747 2711</a>
+                                    <a href="tel:+6285159606023" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0851 5960 6023</a>
                                 </p>
                                 <p class="text">Marketing 2 :
                                     <a href="tel:+6281999334432" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0819 9933 4432</a>
@@ -1164,7 +1194,7 @@
                                 </div>
                                 <div class="contact-info-content media-body footer-caption">
                                     <p class="text">Marketing 1 :
-                                        <a href="tel:+6281217472711" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0812 1747 2711</a>
+                                        <a href="tel:+6285159606023" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0851 5960 6023</a>
                                     </p>
                                     <p class="text">Marketing 2 :
                                         <a href="tel:+6281999334432" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0819 9933 4432</a>
@@ -1208,7 +1238,7 @@
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
-    <a href="https://api.whatsapp.com/send/?phone=6281217472711&text=Bolehkah+Saya+bertanya+mengenai+produk+dari+CTrlSoft?+Terima+kasih+..." class="float" target="_blank">
+    <a id="btnWhasApp" href="javascript:whatsappClick()" class="float">
         <i class="fa fa-whatsapp my-float"></i>
         <i style="font-size: small; vertical-align: middle;">Butuh Bantuan?</i>
     </a>
@@ -1228,7 +1258,6 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-
             //Send Message
             $('#btn_sendmessage').on('click', function() {
                 alert("<?php echo base_url('home/send') ?>");

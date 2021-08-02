@@ -115,7 +115,7 @@
                             <div class="contact-info-content media-body">
                                 <div style="height: 100%; display: flex; align-items: center; justify-content: left;">
                                     <p class="text">No. HP :
-                                        <a href="tel:+6281217472711" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0812 1747 2711</a>
+                                        <a href="tel:+6285159606023" class="list-item-link" target="_self" rel="noopener nofollow" aria-label="phone-volume">0851 5960 6023</a>
                                     </p>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
 
                     <div class="col-lg-6 contact-info pt-30">
                         <div class="row justify-content" style="width: 100%; display: flex; align-items: flex-end; justify-content: flex-end;">
-                            <a href="https://api.whatsapp.com/send/?phone=6281217472711&text=Hi,+saya+ingin+mengajak+berbicara+mengenai+ctrlsoft+apakah+anda+ada+ditempat?+Terima+kasih+..." class="btn btn-outline-success btn-rounded" style="max-width: 128; margin-top: 8pt; text-align: center;">Chat Whatsapp</a>
+                            <a href="javascript:whatsappClick()" class="btn btn-outline-success btn-rounded" style="max-width: 128; margin-top: 8pt; text-align: center;">Chat Whatsapp</a>
                         </div>
                     </div>
                 </div>
