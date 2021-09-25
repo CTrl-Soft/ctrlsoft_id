@@ -6,8 +6,9 @@
 
     <!--====== Title ======-->
     <title>CTrl Software - Software Akutansi dan Retail</title>
-
-    <meta name="description" content="">
+	<meta name="google-site-verification" content="NgcE4Xx3IefHCNlbW4PncEPb7SqNDcKh7glyEus4nhQ" />
+    
+	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Magnific Popup CSS ======-->
