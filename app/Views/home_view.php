@@ -6,9 +6,9 @@
 
     <!--====== Title ======-->
     <title>CTrl Software - Software Akutansi dan Retail</title>
-	<meta name="google-site-verification" content="NgcE4Xx3IefHCNlbW4PncEPb7SqNDcKh7glyEus4nhQ" />
-    
-	<meta name="description" content="">
+    <meta name="google-site-verification" content="NgcE4Xx3IefHCNlbW4PncEPb7SqNDcKh7glyEus4nhQ" />
+
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Magnific Popup CSS ======-->
@@ -60,6 +60,8 @@
 
     <!--====== Main js ======-->
     <script src="<?= base_url('/js/main.js') ?>"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script type="text/javascript">
         //===== Sticky
@@ -1027,14 +1029,16 @@
                                 Whoops! Ada kesalahan saat input data, yaitu:
                                 <?php echo session()->getFlashdata('error'); ?>
                                 <ul>
-                                    <?php foreach ($errors as $error) { ?>
-                                        <li><?php echo esc($error); ?></li>
-                                    <?php } ?>
+                                    <?php if ($errors != null) {
+                                        foreach ($errors as $error) { ?>
+                                            <li><?php echo esc($error); ?></li>
+                                    <?php }
+                                    } ?>
                                 </ul>
                             </div>
                         <?php }
                         $inputs = session()->getFlashdata('inputs');
-                        echo form_open(base_url('home/send')); ?>
+                        echo form_open(base_url('home/sendMail')); ?>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-input mt-25">
@@ -1138,6 +1142,11 @@
                                 </div> <!-- form input -->
                             </div>
                             <p class="form-message"></p>
+                            <div class="col-md-12">
+                                <div class="form-input mt-30">
+                                    <div class="g-recaptcha" data-sitekey="6Ld66LccAAAAAHmD4zOwqH_Z7xIqI6fM1mTj1gPS"></div>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-input light-rounded-buttons mt-30">
                                     <button type="submit" class="main-btn light-rounded-two">Send Message</button>
@@ -1258,10 +1267,11 @@
     <!--====== PART ENDS ======-->
 
     <script type="text/javascript">
+        <?php /*
         $(document).ready(function() {
             //Send Message
             $('#btn_sendmessage').on('click', function() {
-                alert("<?php echo base_url('home/send') ?>");
+                alert("<?php echo base_url('home/googleCaptachStore') ?>");
 
                 var email = $('#email').val();
                 var name = $('#name').val();
@@ -1270,7 +1280,7 @@
                 var message = $('#message').val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('home/send') ?>",
+                    url: "<?php echo base_url('home/googleCaptachStore') ?>",
                     dataType: "JSON",
                     data: {
                         email: email,
@@ -1290,6 +1300,7 @@
                 return false;
             });
         });
+        */ ?>
     </script>
 </body>
 
